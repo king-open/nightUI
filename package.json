@@ -1,6 +1,8 @@
 {
   "name": "nightUI",
   "version": "0.0.0",
+  "main": "main.ts",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build"
