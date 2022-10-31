@@ -1,6 +1,17 @@
 <template>
   <div>
-    第一个组件
+    <div class="topnav">
+      <div class="logo"></div>
+      <div class="menu"></div>
+    </div>
+    <div class="banner">
+      <h1>Night UI</h1>
+      <h2>一个很厉害的UI的框架</h2>
+      <p class="actions">
+        <a href="">Github</a>
+        <a href="">开始</a>
+      </p>
+    </div>
   </div>
 </template>
 
