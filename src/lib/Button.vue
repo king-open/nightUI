@@ -21,6 +21,10 @@ export default {
       type:String,
       default:"normal",
     },
+    disabled:{
+      type:Boolean,
+      default:false
+    },
   },
   setup(props) {
     const {theme,size,level}  = props;
@@ -43,8 +47,9 @@ $border-color: #d9d9d9;
 $color: #333;
 $blue: #40a9ff;
 $radius: 4px;
-$red:red;
+$red:#f00;
 $bg:background;
+$grey:#bfbfbf;
 .i-button {
   box-sizing: border-box;
   height: $h;
@@ -153,6 +158,21 @@ $bg:background;
       &:focus{
         color: darken($red,10%);
       }
+    }
+  }
+  &.n-theme-button {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
+      &:hover {
+        border-color: $grey;
+      }
+    }
+  }
+  &.n-theme-link, &.u-theme-text {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
     }
   }
 }

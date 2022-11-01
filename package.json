@@ -1,10 +1,11 @@
 {
   "name": "nightUI",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "main.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "test": ""
   },
   "dependencies": {
     "vue": "^3.0.0-rc.1",
