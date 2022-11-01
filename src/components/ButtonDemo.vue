@@ -1,8 +1,15 @@
 <template>
+  <h1>示例1</h1>
   <Button>你好</Button>
   <Button theme="button">你好</Button>
   <Button theme="link">你好</Button>
   <Button theme="text">你好</Button>
+    <h1>示例2</h1>
+    <div>
+      <Button size="big">大大大</Button>
+      <Button>正常</Button>
+      <Button size="small">小小小</Button>
+    </div>
 </template>
 
 <script lang="ts">
@@ -13,7 +20,6 @@ export default {
     const onClick = ()=>{
       console.log(onClick)
       console.log('hi')
-
     }
     return {onClick}
   }
