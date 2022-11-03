@@ -3,12 +3,12 @@
     <div class="n-dialog-overlay" @click="onClickOverlay"></div>
     <div class="n-dialog-wrapper">
       <div class="n-dialog">
-        <header>标题 
+        <header>
+          <slot name="title"/>
           <span @click="close" class="n-dialog-close"></span>
         </header>
         <main>
-          <p>第一行字</p>
-          <p>第二行字</p>
+          <slot name="content"/>
         </main>
         <footer>
           <Button level="main" @click="ok">OK</Button>
