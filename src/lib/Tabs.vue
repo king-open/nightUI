@@ -4,8 +4,7 @@
     <div class="n-tabs-nav-item" v-for="(t,index) in titles" @click="select(t)" :class="{selected: t=== selected}"  :key="index">{{t}}</div>
   </div>
   <div class="n-tabs-content">
-    {{current}}
-    <component class="n-tabs-content-item" :is="current" />
+    <component class="n-tabs-content-item" :class="{selected: c.props.title === selected }" v-for="c in defaults" :is="c" />
   </div>
   </div>
 </template>
@@ -72,6 +71,12 @@ $border-color: #d9d9d9;
   }
   &-content {
     padding: 8px 0;
+    &-item {
+      display: none;
+      &.selected {
+        display: block;
+      }
+    }
   }
 }
 </style>
