@@ -1,5 +1,5 @@
 <template>
-  <button class="i-button" :class="classes">
+  <button class="i-button" :class="classes" :disabled="disabled">
     <slot/>
   </button>
 </template>
@@ -24,7 +24,7 @@ export default {
     disabled:{
       type:Boolean,
       default:false
-    },
+    }
   },
   setup(props) {
     const {theme,size,level}  = props;
