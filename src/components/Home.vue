@@ -21,7 +21,8 @@ import Topnav from '../components/Topnav.vue'
 
 <style lang="scss" scoped>
 .topnavAndBanner{
-  background: linear-gradient(145deg,rgba(227,255,253,1)0%,rgba(183, 233, 230, 1) 100%);
+  background: linear-gradient(145deg,rgba(227,255,253,1)0%,rgba(183, 233, 230, 1) 100%); 
+  /* 背景渐变 后面需要改，这个颜色暂时 */
 }
 .banner {
   padding: 100px 0;
