@@ -2,6 +2,7 @@
   <div class="n-tabs">
     <div class="n-tabs-nav">
       <div class="n-tabs-nav-item" v-for="(t,index) in titles" @click="select(t)" :class="{selected: t=== selected}" :key="index">{{t}}</div>
+      <div class="n-tabs-nav-indicator"></div>
     </div>
     <div class="n-tabs-content">
       <component class="n-tabs-content-item" :class="{selected: c.props.title === selected }" v-for="c in defaults" :is="c" />
