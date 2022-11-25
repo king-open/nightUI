@@ -1,10 +1,10 @@
 <template>
   <div class="topnav">
-    <div class="logo" @click="toggleMenu">
+    <router-link class="logo" @click="toggleMenu">
       <svg class="logo">
         <use xlink:href="#icon-moon"></use>
       </svg>
-    </div>
+    </router-link>
     <ul class="menu">
       <li>
         <router-link to="/doc">文档</router-link>
