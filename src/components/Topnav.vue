@@ -1,6 +1,6 @@
 <template>
   <div class="topnav">
-    <router-link class="logo" @click="toggleMenu">
+    <router-link to="/" class="logo" @click="toggleMenu">
       <svg class="logo">
         <use xlink:href="#icon-moon"></use>
       </svg>
